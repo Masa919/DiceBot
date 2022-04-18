@@ -3,7 +3,7 @@ import discord
 import random
 
 # 自分のBotのアクセストークンに置き換えてください
-TOKEN = 'OTY1NTEwNzE4MTgwOTY2NDAw.Yl0P7Q.JssAqcfefhlOERu_6nLevXN1XxY'
+TOKEN = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 # 接続に必要なオブジェクトを生成
 client = discord.Client()
@@ -42,10 +42,6 @@ async def on_message(message):
             return
     else:
         return
-#     「/neko」と発言したら「にゃーん」が返る処理
-#    if message.content == '/neko':
-#        await message.channel.send('にゃーん')
-
 
 # Botの起動とDiscordサーバーへの接続
 client.run(TOKEN)
