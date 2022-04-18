@@ -28,15 +28,14 @@ async def on_message(message):
             palam0 = int(palam_list[0])
             palam1 = int(palam_list[1])
             num = [0] * palam0
-            print("dice num :" + str(palam0))
-            print("dice range is :" + str(palam1))
+
             if 0 < palam0 <10:
                 for i in range(palam0):
                     num[i] = random.randint(1,palam1)
                 reply = f'>{message.author.mention} \nDiceBot:('+ str(palam0)+'D'+ str(palam1) + ')>' + str(num)  
                 await message.channel.send(reply)
             else :
-                print("number of dice is too many")
+                await message.channel.send("number of dice is too many")
                 return
         else:
             return
